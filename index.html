@@ -4,10 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hola Mundo</title>
+    <link rel="stylesheet" href="/Style/main.css">
+    <script src="js/main.js"></script>
+    <style id="style">
+    </style>
 </head>
 <body>
-    <h1>
-        Hola Mundo
-    </h1>
+    <div class="Encabezado">
+        <div class="Caja">
+            <label class="titulo">
+                HTML
+            </label>
+          <textarea name="Escriba algo aquí" id="cajaHTML" class="Caja1" cols="30" rows="10"> </textarea>
+        </div>
+        <div class="Caja">
+            <label class="titulo">
+                CSS
+            </label>
+            <textarea name="Escriba algo aquí" id="cajaCSS" class="Caja1" cols="30" rows="10">
+            </textarea>
+        </div>        
+        <div class="Caja">
+            <label class="titulo">
+                JS
+            </label>
+            <textarea name="Escriba algo aquí" id="cajaJS" class="Caja1" cols="30" rows="10">
+            </textarea>
+        </div>
+    </div>
+    <div class="Centro" class="Boton">
+        <button id="buttonTest">Test</button>
+    </div>
+    <div class="Fin" id="testArea">
+    </div>
+    <script id="script">
+        let buttonCalcular = document.getElementById('calcular');
+
+        buttonCalcular.AddEventListener('click', calcular);
+
+        function calcular(){
+        let año = document.getElementById('año');
+        let edad = document.getElementById('edad');
+        let añoNacimiento = año.value;
+
+        let edadActual = 2023 - añoNacimiento;
+
+        edad.innerHTML = edadActual;
+        }
+    </script>
 </body>
 </html>

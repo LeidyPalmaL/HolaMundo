@@ -1,0 +1,63 @@
+:root{
+    font-size: 16px;
+
+}
+body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 17rem 4rem 17rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: lightpink;
+}
+.Encabezado{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 10px 10px 10px 10px ;
+    background-color:none;
+    align-items: center;
+    background-color: lightgrey;
+}
+.Caja{
+    /* justify-content: center;
+    align-items: center; */
+    border: 1px;
+    background-color: black;
+    color: aliceblue;
+    height: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 0.5rem;
+   }
+.Caja1{
+    height: 90%;
+    background-color: black;
+    color: aliceblue;
+    width: 100%;
+}
+.titulo{
+    align-items: flex-start;
+}
+.Centro{
+    right: 10%;
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px 10px 10px 10px ;
+    background-color: none;
+    justify-content: end;
+    }
+.Boton{
+    display: grid;
+    justify-content: left;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;    
+}
+.Fin{
+    background-color: white;
+    color: black;
+    top: 1rem;
+    padding: 10px 10px 10px 10px;
+    border: 9px;
+    border-color: blue;
+}
